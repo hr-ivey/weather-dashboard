@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css"/>
+</head>
+
+<header>
+  Weather Dashboard
+</header>
+
+<body>
+  <div class="container" id="dashboard-content">
+  <div class="row">
+    <!-- Search for a City options on left hand side. -->
+    <div class="col-md-3 city-search">
+      <h1>Search for a City:</h1>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <input class="btn btn-primary" type="button" value="Input">
+    </div>
+<!-- Primary dashboard information. -->
+    <div class="col-md-9">
+      <div class="dashboard-main">
+      <h1>Atlanta information.</h1>
+      Yadda yadda yadda. Temp wind humidity etc. etc. etc.<br>
+      Yadda yadda yadda. Temp wind humidity etc. etc. etc.<br>
+      Yadda yadda yadda. Temp wind humidity etc. etc. etc.<br>
+      Yadda yadda yadda. Temp wind humidity etc. etc. etc.<br>
+    </div>
+    <br>
+<!-- 5-Day Forecast boxes. -->
+      <div>
+          <div class="row">
+           <h2>Five-day Forecast:</h2>
+            <div class="col fiveday">
+              <b>Temp:</b> <br>
+              <b>Wind:</b>  <br>
+              <b>Humidity:</b>  <br>
+            </div>
+            <div class="col fiveday">
+              <b>Temp:</b> <br>
+              <b>Wind:</b>  <br>
+              <b>Humidity:</b>  <br>
+            </div>
+            <div class="col fiveday">
+              <b>Temp:</b> <br>
+              <b>Wind:</b>  <br>
+              <b>Humidity:</b>  <br>
+            </div>
+            <div class="col fiveday">
+              <b>Temp:</b> <br>
+              <b>Wind:</b>  <br>
+              <b>Humidity:</b>  <br>
+            </div>
+            <div class="col fiveday">
+              <b>Temp:</b> <br>
+              <b>Wind:</b>  <br>
+              <b>Humidity:</b>  <br>
+          </div>
+      </div>
+<!-- End of 5-Day Forecast boxes. -->
+    </div>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>

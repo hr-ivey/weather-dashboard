@@ -1,0 +1,36 @@
+h1, h2 {
+  font-weight: 700;
+}
+
+header {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  font-size: 3em;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  padding: .2em;
+}
+
+#dashboard-content {
+  max-width: 90%;
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+
+.city-search {
+  padding: 1em;
+}
+
+.dashboard-main {
+  border: 1px;
+  border-style: solid;
+  border-color:black;
+  padding: 1em;
+}
+
+.fiveday {
+  padding: 1em;
+  margin: .5em;
+  background-color: #047cc5;
+  color: #fff;
+}
