@@ -1,4 +1,19 @@
-h1, h2 {
+p {
+  font-size: 1.5em;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.6em;
   font-weight: 700;
 }
 
@@ -17,6 +32,13 @@ header {
   font-size: 1.2em;
 }
 
+#dashboardMain {
+  border: 1px;
+  border-style: solid;
+  border-color:black;
+  padding: 1em;
+}
+
 .button {
   width: 100%;
   border-radius: .5em;
@@ -26,13 +48,6 @@ header {
 }
 
 .city-search {
-  padding: 1em;
-}
-
-.dashboard-main {
-  border: 1px;
-  border-style: solid;
-  border-color:black;
   padding: 1em;
 }
 

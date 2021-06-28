@@ -6,34 +6,33 @@ var APIKey = "35be878d31562e0b31926bafbd67983b"
 
 function weatherTime(){
 console.log("Button clicked. Function started.")
-console.log(city)
 fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey)
     .then (function (response) {
         return response.json();
     })
     .then (function(data) {
         console.log(data);
-        for (var i = 0; i < data.length; i++) {
-            var cityName = document.createElement('h3');
-            var cityTemp = document.createElement('p');
-            var cityWind = document.createElement('p');
-            var cityHumid = document.createElement('p');
-            var cityUV = document.createElement('p');
+        for (var i = 0; i < 5; i++) {
+            var cityName = document.createElement("h3");
+            var cityTemp = document.createElement("p");
+            var cityWind = document.createElement("p");
+            var cityHumid = document.createElement("p");
+            var cityUV = document.createElement("p");
 
-            cityName.textContent=data[i].name;
-            cityTemp.textContent=data[i].temp;
-            cityWind.textContent=data[i].wind;
-            cityHumid.textContent=data[i].humidity;
-            cityUV.textContent=data[i].name;
+            cityName.textContent=data.name;
+            cityTemp.textContent= ("Temperature: " + data.main.temp);
+            cityWind.textContent=("Wind: " + data.wind.speed);
+            cityHumid.textContent=("Humidity: " + data.main.humidity);
+            cityUV.textContent=("UV: " + data.uv);
 
-            console.log(cityName);
-
-
-            dashboard-mainContainer.append(cityName);
-            dashboard-mainContainer.append(cityTemp);
+            dashboardMain.append(cityName);
+            dashboardMain.append(cityTemp);
+            dashboardMain.append(cityWind);
+            dashboardMain.append(cityHumid);
+            dashboardMain.append(cityUV);
+            return
         }
     });
 }
 
 searchCity.addEventListener('click', weatherTime);
-
