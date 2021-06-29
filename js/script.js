@@ -39,7 +39,7 @@ function fiveDay(){
     .then (function(data) {
         console.log(data);
         for (var i = 0; i < 5; i++) {
-            var fiveDayDiv = document.createElement("div");
+            var fiveDayDiv = document.createElement("div");[0];
             fiveDayDiv.className= "fiveday col";
             fiveDaySection.append(fiveDayDiv);
 
